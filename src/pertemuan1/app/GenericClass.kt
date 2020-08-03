@@ -3,9 +3,9 @@ package pertemuan1.app
 import pertemuan1.data.MyData
 
 fun main() {
-    val myDataString: MyData<String> = MyData<String>("Shaufi")
+    val myDataString: MyData<String, Int> = MyData<String, Int>("Shaufi", 100)
     myDataString.printlnData()
 
-    val myDataInt: MyData<Int> = MyData<Int>(10)
+    val myDataInt = MyData(100, "Shaufi")
     myDataInt.printlnData()
 }
